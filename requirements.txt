@@ -1,0 +1,52 @@
+# LIGHTWEIGHT DEPENDENCIES FOR 2GB RASPBERRY PI
+# Core dependencies
+RPi.GPIO==0.7.0
+python-periphery==2.4.1
+
+# Computer Vision (lightweight versions)
+opencv-python-headless==4.8.1.78
+
+# AI/ML Frameworks (lightweight)
+torch==2.0.1
+torchvision==0.15.2
+ultralytics==8.0.189  # YOLOv8 (use nano model)
+
+# Image Processing
+Pillow==10.0.0
+numpy==1.24.3
+
+# Audio (lightweight)
+pyttsx3==2.90
+
+# Display
+Pygame==2.5.0
+
+# Communication
+requests==2.31.0
+paho-mqtt==1.6.1
+pyserial==3.5
+
+# Data Processing (minimal)
+pandas==2.0.3
+
+# Configuration
+python-dotenv==1.0.0
+pyyaml==6.0.1
+
+# Logging
+coloredlogs==15.0.1
+
+# Testing
+pytest==7.4.0
+mock==5.1.0
+
+# Code Quality
+black==23.9.1
+flake8==6.1.0
+
+# Utilities
+tqdm==4.66.1
+click==8.1.7
+
+# Hardware specific
+adafruit-blinka==8.21.0

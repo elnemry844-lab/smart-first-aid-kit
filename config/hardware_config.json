@@ -1,0 +1,105 @@
+{
+  "raspberry_pi": {
+    "model": "Raspberry Pi 4 Model B",
+    "ram_gb": 2,
+    "cpu_cores": 4,
+    "clock_speed_ghz": 1.5,
+    "note": "2GB RAM requires optimization"
+  },
+  "camera": {
+    "module": "Raspberry Pi Camera Module v2",
+    "resolution_mp": 8,
+    "sensor_size_mm": "3.68 x 2.76",
+    "lens_focal_length_mm": 3.04,
+    "fov_degrees": 62,
+    "connection": "CSI/DSI ribbon"
+  },
+  "display": {
+    "type": "5-inch or 7-inch Touchscreen Display",
+    "resolution": "800x480",
+    "interface": "DSI",
+    "touchscreen": "Capacitive",
+    "note": "Lower resolution recommended for 2GB RAM"
+  },
+  "audio": {
+    "speaker": {
+      "type": "USB-powered Speaker or 3.5mm Jack",
+      "power_w": 3,
+      "impedance_ohm": 8,
+      "frequency_response_hz": "40-20000"
+    },
+    "connection": "3.5mm jack or USB"
+  },
+  "power_system": {
+    "solar_panel": {
+      "type": "Monocrystalline Solar Panel",
+      "power_w": 50,
+      "voltage_v": 18,
+      "current_a": 2.8,
+      "dimensions_m": "0.7 x 0.5",
+      "efficiency_percent": 20
+    },
+    "charge_controller": {
+      "type": "MPPT Solar Charge Controller",
+      "model": "EPEVER TRACER 2210AN",
+      "current_a": 20,
+      "input_voltage_v": 100,
+      "output_voltage_v": 12,
+      "efficiency_percent": 97
+    },
+    "battery": {
+      "type": "LiFePO4 Battery",
+      "voltage_v": 12,
+      "capacity_ah": 50,
+      "energy_kwh": 0.6,
+      "lifespan_years": 10,
+      "temperature_range_c": "-20 to 60"
+    },
+    "dc_converter": {
+      "type": "Buck Converter",
+      "input_voltage_v": "12",
+      "output_voltage_v": "5",
+      "output_current_a": 2.5,
+      "efficiency_percent": 95
+    },
+    "ups_module": {
+      "type": "UPS HAT Module",
+      "battery_capacity_mah": 2000,
+      "output_voltage_v": 5,
+      "charging_time_hours": 2
+    }
+  },
+  "emergency_button": {
+    "type": "Large Momentary Push Button",
+    "color": "Red",
+    "diameter_mm": 60,
+    "actuator_force_n": 15,
+    "connection": "GPIO 17 (BCM)"
+  },
+  "enclosure": {
+    "type": "Waterproof Enclosure",
+    "ip_rating": "IP65",
+    "material": "ABS Plastic or Aluminum",
+    "dimensions_cm": "25 x 20 x 10",
+    "weight_kg": 1.5,
+    "note": "Compact design for 2GB model"
+  },
+  "gpio_mapping": {
+    "emergency_button": 17,
+    "led_status": 27,
+    "led_power": 22,
+    "relay_1": 23,
+    "i2c_sda": 2,
+    "i2c_scl": 3
+  },
+  "interfaces": {
+    "camera": "CSI (Camera Serial Interface)",
+    "display": "DSI (Display Serial Interface)",
+    "audio_input": "3.5mm jack",
+    "audio_output": "3.5mm jack",
+    "power_input": "USB-C or XT60 connector",
+    "gpio": "40-pin header",
+    "i2c": "GPIO 2 (SDA), GPIO 3 (SCL)",
+    "uart": "GPIO 14 (TX), GPIO 15 (RX)"
+  }
+}
